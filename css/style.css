@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+* {margin:0; padding:0; box-sizing:border-box;}
+html,body {font:10pt/180% "나눔고딕"; color:#333;}
+a {color:#333; text-decoration:none;}
+a:focus {outline:1px solid red;}
+img {display:block; color:white; height:auto;}
+
+
+/*상단*/
+header {width:1024px; margin:auto; z-index:1; display:flex;}
+header h1 {}
+header img {display:block; transform:translateY(30px)}
+
+
+/*메뉴*/
+header>nav {flex:1;}
+nav ul {max-width:1000px; margin:auto; list-style:none; display:flex; justify-content:space-between; transform:translateY(50px); z-index:1; position:relative;}
+nav li {position:relative; z-index:1;}
+
+/*메인메뉴*/
+nav li>a {padding:15px; display:block; font-size:1.3rem; font-weight:bold;}
+nav li>a:hover {font-weight:bold; background:#015daa; color:white;}
+
+/*서브메뉴*/
+li nav {position:absolute; background:#015daa; width:100%; display:none; }
+li nav a {display:block; padding:20px; font-size:0.8rem; color:white;}
+li nav a:hover {font-weight:bold;}
+/*하위메뉴*/
+header li:nth-child(1) nav {}
+/*슬라이드*/
+header+section h2 {display:none;}
+#slide {position:relative;}
+#slide a:not(:first-child) {position:absolute; top:0; transform:translateY(-50px); margin:auto; width:100%;}
+#slide img {border:3px solid #015daa; margin:auto; margin-top:50px;}
+
+/*메인*/
+#layout {width:1024px; margin:auto; background:white;}
+#click h2 {display:none;}
+#menu {max-width:850px; height:100%; border:1px solid #ddd; border-top:none; border-bottom:none; margin:auto; display:flex; flex-wrap:wrap; justify-content:space-evenly; padding:30px 10px;}
+#menu h2{display:none;}
+#menu section img {box-shadow:2px 2px 4px rgba(0,0,0, 0.7); display:block; margin:20px;}
+/*공지사항*/
+#notice1 {padding:30px; transform:translateX(-10px);}
+#notice1 h2 {display:block; padding:30px 0; color:#015daa;}
+#notice1 a {margin-right:10px;}
+#notice1 a:hover {border-bottom:1px solid black;}
+#notice2 {padding:30px; transform:translateX(-10px);}
+#notice2 h2 {display:block; padding:30px 0; color:#015daa;}
+#notice2 a {margin-right:10px;}
+#notice2 a:hover {border-bottom:1px solid black;}
+
+/*하단*/
+footer {max-width:1024px; margin:auto; background:#015daa; color:white; font-size:0.8rem; padding:10px;}
+footer a {color:white;}
+footer a:hover {font-weight:bold; border-bottom:1px solid white;}
