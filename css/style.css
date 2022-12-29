@@ -51,6 +51,6 @@ header+section h2 {display:none;}
 #notice2 a:hover {border-bottom:1px solid black;}
 
 /*하단*/
-footer {max-width:1024px; margin:auto; background:#015daa; color:white; font-size:0.8rem; padding:10px;}
+footer {width:1024px; margin:auto; background:#015daa; color:white; font-size:0.8rem; padding:10px;}
 footer a {color:white;}
 footer a:hover {font-weight:bold; border-bottom:1px solid white;}
